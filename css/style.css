@@ -99,6 +99,7 @@
 .landing .container .row .content .image img{
     max-width: 400px;
 }
+
 @media (max-width: 590px) {
     .landing .container .row .content .image img{
         max-width: 250px;
@@ -114,7 +115,7 @@
 /* start sections */
 .sections{
     padding-top: 120px;
-    padding-bottom: 30pc;
+    padding-bottom: 30px;
 }
 .sections .section{
     padding: 15px;
@@ -165,3 +166,171 @@
     color: #fff;
 }
 /* end sections */
+/* start about */
+.about{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: url(../images/gray-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.about .container .row .content{
+    padding: 15px;
+}
+.about .container .row .content .image img{
+    max-width: 400px;
+}
+.about .container .row .content .text{
+    padding-top: 32px;
+}
+.about .container .row .content .text .title h2{
+    color: #303952;
+    font-weight: bold;
+    font-size: 40px;
+}
+.about .container .row .content .text .box{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.about .container .row .content .text .box i{
+    color: #00cdcd;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.about .container .row .content .text .box p{
+    color: #303952;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+@media (max-width: 590px) {
+    .about .container .row .content .image img{
+        max-width: 250px;
+    } 
+}
+/* end about */
+/* start features */
+.features{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.speacial{
+    text-align: center;
+}
+.speacial h2{
+    font-size: 80px;
+}
+.speacial h2 span{
+    color: #00cdcd;
+}
+.speacial .container{
+    padding-left: 170px;
+    padding-right: 170px;
+}
+.speacial p{
+    font-size: 18px;
+}
+.features .features-1{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 100px;
+}
+.features .features-2{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 100px;
+}
+.features .features-1 .feat{
+    text-align: right;
+}
+.features .features-1 .feat:nth-child(1),
+.features .features-1 .feat:nth-child(3){
+    transform: translateX(50px);
+}
+.features .features-2 .feat:nth-child(1),
+.features .features-2 .feat:nth-child(3){
+    transform: translateX(-50px);
+}
+.features .features-1 .feat h2{
+    font-size: 22px;
+}
+.features .features-1 .feat h2 i,
+.features .features-2 .feat h2 i{
+    color: #00cdcd;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 28px;
+}
+.features .features-1 .feat p,
+.features .features-2 .feat p{
+    font-size: 18px;
+}
+.features .image{
+    position: relative;
+}
+.features .image img{
+    max-width: 100%;
+    transform: translateX(-25px);
+}
+@media (max-width: 992px) {
+    .speacial .container{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .features .features-1{
+        align-items: flex-start;
+    }
+    .features .features-1 .feat{
+        text-align: left;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .features .features-1 .feat h2{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .features .features-1 .feat:nth-child(1),
+    .features .features-1 .feat:nth-child(3){
+    transform: translateX(0px);
+    }
+    .features .features-1{
+        padding-left: 5px;
+        padding-right: 0;
+    }
+    .features .features-2{
+        padding-left: 5px;
+    }
+    .features .features-2 .feat:nth-child(1),
+    .features .features-2 .feat:nth-child(3){
+        transform: translateX(0px);
+    }
+    .features .image{
+        text-align: center;
+    }
+    .features .image img{
+        max-width:250px;
+        text-align: center;
+    }
+}
+/* end features */
+/* start other features */
+.other-features{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #00cdcd;
+    height: 400px;
+}
+.other-features .speacial h2{
+    color: #303952;
+}
+.other-features .speacial h2 span{
+    color: #fff;
+}
+/* end other features */
