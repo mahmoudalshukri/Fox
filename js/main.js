@@ -35,3 +35,42 @@ $(document).ready(function(){
       }]
   });
 });
+$(document).ready(function(){
+  $('.testimonial-slider').slick({
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      autoplay: false,
+      autoplaySpeed: 2000,
+      arrows: false,
+      dots: true,
+      pauseOnHover: false,
+      responsive: [{
+          breakpoint: 992,
+          settings: {
+              slidesToShow: 2
+          }
+      }, {
+          breakpoint: 776,
+          settings: {
+              slidesToShow: 1
+          }
+      }]
+  });
+});
+
+
+let valueDisplays = document.querySelectorAll(".number");
+let interval = 3000;
+
+valueDisplays.forEach((valueDisplay) => {
+  let startValue = 0;
+  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+  let duration = Math.floor(interval / endValue);
+  let counter = setInterval(function () {
+    startValue += 1;
+    valueDisplay.textContent = startValue;
+    if (startValue == endValue) {
+      clearInterval(counter);
+    }
+  }, duration);
+});
