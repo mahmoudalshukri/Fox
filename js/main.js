@@ -12,3 +12,26 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+$(document).ready(function(){
+  $('.customer-logos').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false,
+      dots: false,
+      pauseOnHover: false,
+      responsive: [{
+          breakpoint: 992,
+          settings: {
+              slidesToShow: 2
+          }
+      }, {
+          breakpoint: 776,
+          settings: {
+              slidesToShow: 1
+          }
+      }]
+  });
+});
