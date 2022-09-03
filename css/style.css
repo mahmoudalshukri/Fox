@@ -590,6 +590,18 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
+.screenshots .customer-logos .slide-content{
+    background-color: transparent !important;
+}
+.screenshots .customer-logos .slide-content img{
+    width: 300px !important;
+    border-radius: 0px;
+}
+@media (max-width: 576px) {
+    .screenshots .customer-logos .slide-content img{
+        width: 250px !important;
+    }
+}
 /* end screenshots */
 /* start client testimonial */
 .client-testimonial{
@@ -732,3 +744,166 @@ body{
     font-size: 26px;
 }
 /* end Facts */
+/* start prices */
+.prices{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.prices .price .p{
+    background-image: url(../images/gray-bg.jpg);
+    background-size: cover;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.prices .price .p .head{
+    padding: 15px;
+    color: #00cdcd;
+    font-weight: bold;
+}
+.prices .price .p .head h2{
+    font-size: 32px;
+}
+.prices .price .p .head p{
+    font-size: 16px;
+}
+.prices .price .p .head p span{
+    font-size: 60px;
+}
+.prices .price .p .body{
+    background-color: #00cdcd;
+    position: relative;
+    height: 400px;
+}
+.prices .price .p .body ul{
+    padding: 15px;
+}
+.prices .price .p .body ul li{
+    list-style: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px;
+    height: 60px;
+    border-bottom: 1px solid rgba(246, 246, 246, 0.28);
+}
+.prices .price .p .body button{
+    height: 60px;
+    width: 180px;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    background-color: #fff;
+    color: #00cdcd;
+    display: grid;
+    place-items: center;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    font-size: 18px;
+}
+.prices .price .p:hover .body button{
+    background-color: #F2CE5F;
+    color: #fff;
+}
+/* end prices */
+/* start team */
+.team{
+    padding-top: 30px;
+    padding-bottom: 60px;
+    background-image: url(../images/gray-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.slick-initialized .slick-slide{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+}
+.slick-initialized .slick-slide img{
+    width: 100px;
+    border-radius: 50%;
+}
+.slick-initialized .slick-slide h2{
+    font-size: 18px;
+    color: #00cdcd;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+.slick-initialized .slick-slide p{
+    font-size: 16px;
+}
+.slick-initialized .slick-slide .menu{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: #fff;
+    transition: 0.3s ease-in-out;
+    margin-top: -35px;
+    z-index: -1;
+}
+.slick-initialized .slick-slide .menu i{
+    color: #00cdcd;
+    transition: 0.3s ease-in-out;
+}
+.slick-initialized .slick-slide:hover h2,
+.slick-initialized .slick-slide:hover i{
+    color: #F2CE5F;
+}
+.slick-initialized .slick-slide:hover .menu{
+    margin-top: 0;
+    z-index: 3;
+}
+/* end team */
+/* start FAQ */
+.faq{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.faq .container .questions .image img{
+    width: 100%;
+}
+.faq .container .all-q{
+    display: grid;
+    place-items: center;
+}
+.faq .container .questions .question button{
+    background-color: #00cdcd;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    text-align: left;
+    padding: 15px;
+    position: relative;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+@media (max-width: 576px) {
+    .faq .container .questions .question button{
+        font-size: 14px;
+    }
+}
+.faq .container .questions .question button:focus{
+    border-radius: 10px;
+    box-shadow: none;
+}
+.faq .container .questions .question button::after{
+    content: '+';
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 26px;
+}
+
+/* end FAQ */

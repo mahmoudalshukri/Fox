@@ -57,10 +57,32 @@ $(document).ready(function(){
       }]
   });
 });
+$(document).ready(function(){
+  $('.members-slider').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: false,
+      autoplaySpeed: 2000,
+      arrows: false,
+      dots: true,
+      pauseOnHover: false,
+      responsive: [{
+          breakpoint: 992,
+          settings: {
+              slidesToShow: 2
+          }
+      }, {
+          breakpoint: 776,
+          settings: {
+              slidesToShow: 1
+          }
+      }]
+  });
+});
 
 
 let valueDisplays = document.querySelectorAll(".number");
-let interval = 3000;
+let interval = 5000;
 
 valueDisplays.forEach((valueDisplay) => {
   let startValue = 0;
