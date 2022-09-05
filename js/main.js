@@ -1,5 +1,5 @@
 // loading screen start
-// function loading() {
+function loading() {
   let loader = document.querySelector(".loading")
   loader.style.display = "none"
 }
