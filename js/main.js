@@ -1,3 +1,17 @@
+// loading screen start
+// function loading() {
+  let loader = document.querySelector(".loading")
+  loader.style.display = "none"
+}
+
+window.addEventListener("load", loading)
+
+//to prevent scrolling during loading animation is applied 
+$(window).load(function() {
+  $('html, body').css('overflowY', 'auto'); 
+});
+
+// loading screen end 
 // Get the container element
 var btnContainer = document.getElementById("navbarSupportedContent");
 
@@ -80,6 +94,29 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+  $('.news-slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: false,
+      autoplaySpeed: 2000,
+      arrows: false,
+      dots: true,
+      pauseOnHover: false,
+      responsive: [{
+          breakpoint: 992,
+          settings: {
+              slidesToShow: 1
+          }
+      }, {
+          breakpoint: 776,
+          settings: {
+              slidesToShow: 1
+          }
+      }]
+  });
+});
+
 
 let valueDisplays = document.querySelectorAll(".number");
 let interval = 5000;
@@ -96,3 +133,4 @@ valueDisplays.forEach((valueDisplay) => {
     }
   }, duration);
 });
+
